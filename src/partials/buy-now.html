@@ -1,0 +1,175 @@
+<div class="backdrop is-hidden animation-backdrop" data-modal-buynow>
+
+  <div class="modal-buy-now">
+
+    <button class="modal-close-btn-bynow" data-modal-close-buynow>
+      <svg class="buy-now-modal-close-btn-icon">
+        <use href="./img/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <h2 class="header-buynow"><span>BUY</span> NOW</h2>
+
+      <div class="swiperbuy">
+        <ul class="list buynow-items swiper-wrapper">
+          <li class="buynow-item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ./img/desktop/buy-now-1.png       1x,
+                  ./img/desktop/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ./img/tablet/buy-now-1.png       1x,
+                  ./img/tablet/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/mobile/buy-now-1.png       1x,
+                  ./img/mobile/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src="./img/mobile/buy-now-1.png"
+                alt="buynow image1"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">100 g</button>
+          </li>
+          <li class="buynow-item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ./img/desktop/buy-now-2.png       1x,
+                  ./img/desktop/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ./img/tablet/buy-now-2.png       1x,
+                  ./img/tablet/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/mobile/buy-now-2.png       1x,
+                  ./img/mobile/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src="./img/mobile/buy-now-2.png"
+                alt="buynow image2"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">200 g</button>
+          </li>
+          <li class="buynow-item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ./img/desktop/buy-now-3.png       1x,
+                  ./img/desktop/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ./img/tablet/buy-now-3.png       1x,
+                  ./img/tablet/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/mobile/buy-now-3.png       1x,
+                  ./img/mobile/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src="./img/mobile/buy-now-3.png"
+                alt="buynow image3"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">300 g</button>
+          </li>
+        </ul>
+        <div class="swiperbuy-pagination" id="swiperbuy-pagination"></div>
+      </div>
+
+    <form class="mw-buy-now-form" onsubmit="submitForm(event)">
+      
+      <label for="mw-boy-now-input-name" class="mw-buy-now-item-name label-for-mw-buynuw">
+        Personal information
+      </label>
+
+      <div class="mw-buy-now-cont">
+          <input id="mw-boy-now-input-name" type="text" class="mw-buy-now-input-name mw-buynow-for-margin" placeholder="Name">
+        
+        <label for="mw-boy-now-input-surname" class="mw-buy-now-item-surname visually-hidden label-for-mw-buynuw">
+          Surname
+        </label>
+        <input id="mw-boy-now-input-surname" type="text" class="mw-buy-now-input-surname mw-buynow-for-margin" placeholder="Surname">
+      </div>
+
+      <label class="mw-buy-now-item-email label-for-mw-buynuw">
+        Email
+        <input type="email" class="mw-buy-now-input-email mw-buynow-for-margin" placeholder="Enter your email">
+      </label>
+
+      <label class="mw-buy-now-item-phone label-for-mw-buynuw">
+        Phone number
+        <input type="tel" class="mw-buy-now-input-phone mw-buynow-for-margin" placeholder="Phone number">
+        <span class="mw-buy-now-phone-number-for-code">
+          <svg width="24" height="24" class="mw-buy-now-icon-flag">
+            <use
+              href="./img/icons.svg#icon-ua"
+            ></use>
+          </svg>
+          <span class="mw-buy-now-phone-number-tag-ua">+380</span>
+        </span>
+      </label>
+
+      <label class="mw-buy-now-item-card label-for-mw-buynuw">
+        Card number
+        <input type="tel" maxlength="16" inputmode="numeric" class="mw-buy-now-input-card mw-buynow-for-margin" placeholder="Enter  card">
+        <svg width="24" height="24" class="mw-buy-now-icon-mastercard">
+          <use href="./img/icons.svg#icon-mastercard">
+          </use>
+        </svg>
+      </label>
+
+      <label class="mw-buy-now-item-textarea">
+        Comment
+        <textarea name="comment" class="mw-buy-now-textarea mw-buynow-for-margin" placeholder="Enter text"></textarea>
+      </label>
+      <!-- button submit -->
+      <button
+      type="submit"
+      class="mw-buy-now-btn-submit"
+      data-modal-open-thank-you
+      data-modal-submit-buynow
+      data-modal-close-after-send
+      >
+      Submit
+      </button>
+    </form>
+
+  </div>
+
+</div>
